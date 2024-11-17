@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // get hostname
     function getHostname () {
 
-        return document.referrer;
+        let host = document.referrer;
+
+        return host.split('/')[2];
     }
 
     // get current page
@@ -32,16 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
       
         };
 
-        // console.log("hostname: " + info.hostname.split('/')[2]);
+        console.log("hostname: " + info.hostname);
         // console.log("referrer: " + info.origin);
         // console.log("current: " + info.current);
-        let hostString = info.hostname.split('/')[2];
+        // let hostString = info.hostname.split('/')[2];
 
         function autoFillAndSubmit() {
 
             // Fill in form fields
             document.getElementById('referrer-url').value = info.origin;
-            document.getElementById('referrer-hostname').value = hostString;
+            document.getElementById('referrer-hostname').value = info.hostname;
             document.getElementById('current-page').value = info.current;
             document.getElementsByClassName('pull-right')[0].click();
    

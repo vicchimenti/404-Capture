@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         console.log("hostname: " + info.hostname);
-        // console.log("referrer: " + info.origin);
-        // console.log("current: " + info.current);
+        console.log("referrer: " + info.origin);
+        console.log("current: " + info.current);
         // let hostString = info.hostname.split('/')[2];
 
         function autoFillAndSubmit() {

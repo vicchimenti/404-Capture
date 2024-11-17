@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         function autoFillAndSubmit() {
 
             // Fill in form fields
-            document.getElementById('referrer-url').value = info.origin;
-            document.getElementById('referrer-hostname').value = info.hostname;
-            document.getElementById('current-page').value = info.current;
+            document.getElementById('referrer-url').value = (info.origin) ? info.origin : "Direct Link";
+            document.getElementById('referrer-hostname').value = (info.hostname) ? info.hostname : "Local Host";
+            document.getElementById('current-page').value = (info.current) ? info.current : "No Page Info";
             document.getElementsByClassName('pull-right')[0].click();
    
         }

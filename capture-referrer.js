@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-
-    // get referrer
+    
     function getReferrer () {
 
         return document.referrer.toString();
     }
 
-    // get hostname
+
     function getHostname () {
 
         let host = document.referrer;
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return host.split('/')[2];
     }
 
-    // get current page
+
     function getCurrentPage () {
 
         return window.location.href.toString();
@@ -34,9 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
       
         };
 
+
         // console.log("hostname: " + info.hostname);
         // console.log("referrer: " + info.origin);
         // console.log("current: " + info.current);
+
 
         function autoFillAndSubmit() {
 
@@ -49,7 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         window.onload = setTimeout(() => {
+
             autoFillAndSubmit();
+
         }, 2000);
 
 

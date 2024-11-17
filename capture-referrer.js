@@ -34,14 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
       
         };
 
-        console.log("hostname: " + info.hostname);
-        console.log("referrer: " + info.origin);
-        console.log("current: " + info.current);
-        // let hostString = info.hostname.split('/')[2];
+        // console.log("hostname: " + info.hostname);
+        // console.log("referrer: " + info.origin);
+        // console.log("current: " + info.current);
 
         function autoFillAndSubmit() {
 
-            // Fill in form fields
             document.getElementById('referrer-url').value = (info.origin) ? info.origin : "Direct Link";
             document.getElementById('referrer-hostname').value = (info.hostname) ? info.hostname : "Local Host";
             document.getElementById('current-page').value = (info.current) ? info.current : "No Page Info";
@@ -50,17 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 
-
-        // Call the function when needed, e.g., on page load
         window.onload = setTimeout(() => {
             autoFillAndSubmit();
-            // console.log("Delayed for 1.5 seconds");
         }, 2000);
 
-
-
-
-        
 
     } catch (err) {
         document.write(err);

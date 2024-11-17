@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
- 
 
 
     // get referrer
@@ -21,11 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-
     // Main
     try {
 
-    
         // content dictionary
         let info = {
 
@@ -39,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // console.log("referrer: " + info.origin);
         // console.log("current: " + info.current);
         let hostString = info.hostname.split('/')[2];
-
-
 
         function autoFillAndSubmit() {
 

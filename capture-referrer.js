@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function autoFillAndSubmit() {
 
-            document.getElementById('referrer-url').value = (info.origin) ? info.origin : "Direct Link";
-            document.getElementById('referrer-hostname').value = (info.hostname) ? info.hostname : "Local Host";
-            document.getElementById('current-page').value = (info.current) ? info.current : "No Page Info";
+            document.getElementById('referrer-url').value = (info.origin) ? info.origin : "Z-Direct Link";
+            document.getElementById('referrer-hostname').value = (info.hostname) ? info.hostname : "Z-Local Host";
+            document.getElementById('current-page').value = (info.current) ? info.current : "Z-No Page Info";
             document.getElementsByClassName('pull-right')[0].click();
    
         }

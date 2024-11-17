@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    
+
     function getReferrer () {
 
         return document.referrer.toString();
@@ -32,11 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             hostname: getHostname(),
       
         };
-
-
-        // console.log("hostname: " + info.hostname);
-        // console.log("referrer: " + info.origin);
-        // console.log("current: " + info.current);
 
 
         function autoFillAndSubmit() {
